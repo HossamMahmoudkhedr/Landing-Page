@@ -145,9 +145,10 @@ body{
 }
 .container .left-side .text h2{
     color: var(--Almost-Black);
-    font-size: 81px;
+    font-size: 63px;
     font-weight: 700;
     margin-bottom: 38px;
+    width: 79%;
 }
 .container .left-side .text p{
     color: var(--Medium-Gray);
@@ -206,9 +207,9 @@ body{
 ul{
     list-style: none;
 }
-.sideLinks{
+/* .sideLinks{
     display: none;
-}
+} */
 .dark{
     position: absolute;
     width: 100%;
@@ -217,23 +218,30 @@ ul{
     background: black;
     opacity: 0.8;
 }
+@media (min-width: 1101px){
+    .sideLinks{
+        display: none;
+    }
+}
 @media(max-width:1100px){
     .cont{
         transition: 0.2s;
     }
     .close{
-        transform: translateX(700px);
+        /* transform: translateX(700px); */
+        /* width: 0%; */
+        display: none;
     }
     .closeMenu{
         position: absolute;
         right: 15px;
         top: 15px;
         cursor: pointer;
+        /* display: none; */
     }
     .sideLinks{
-        
         filter:unset;
-        display: block;
+        /* display: block; */
         list-style: none;
         font-size: 14px;
         position: absolute;
@@ -241,10 +249,11 @@ ul{
         top: 0px;
         color: var(--Medium-Gray);
         height: 100%;
-        width: 62%;
+        width: 65%;
         background-color: var(--Almost-White);
         transition: 0.5s ease-in-out;
         z-index: 99;
+        
     }
     .sideLinks > ul{
         margin: 75px 17px;
@@ -320,16 +329,13 @@ ul{
         align-items: center;
     }
     .container .left-side .text h2{
-        font-size: 72px;
+        width: 86%;
     }
     .container .right-side .image img:first-child {
         width: 100%;
     }
 }
 @media (max-width:1070px){
-    body{
-        overflow: hidden;
-    }
     .container{
         margin: 0px ;
         flex-direction: column-reverse;
@@ -363,9 +369,10 @@ ul{
     }
     .container .left-side .text h2{
         color: var(--Almost-Black);
-        font-size: 42px;
+        font-size: 40px;
         font-weight: 700;
         margin-bottom: 20px;
+        width: 100%;
     }
     .container .left-side .text p{
         width: 98%;
