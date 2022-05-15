@@ -62,7 +62,8 @@ body{
 .links .companyList{
     position: absolute;
     left: 23.5%;
-    top: 88%;    
+    top: 88%;
+    /* z-index: 10; */
 }
 .links .companyList ul{
     padding: 24px 19px;
@@ -77,6 +78,7 @@ body{
     position: absolute;
     left: 8.5%;
     top: 88%;
+    /* z-index: 10; */
 }
 .links .featuresList ul{
     padding: 24px 19px;
@@ -132,17 +134,21 @@ body{
 /* End of navbar */
 .container{
     margin: 2% 12% 5%;
+    /* margin: 4% 10%; */
+    /* padding: 10px; */
     display: flex;
 }
 .container .left-side .text{
+    /* padding: 16% 0 9% 0; */
     padding: 26% 0 9% 0;
+    /* 11%  0 10% */
 }
 .container .left-side .text h2{
     color: var(--Almost-Black);
     font-size: 63px;
     font-weight: 700;
     margin-bottom: 38px;
-    width: 79%;
+    width: 81%;
 }
 .container .left-side .text p{
     color: var(--Medium-Gray);
@@ -201,6 +207,9 @@ body{
 ul{
     list-style: none;
 }
+/* .sideLinks{
+    display: none;
+} */
 .dark{
     position: absolute;
     width: 100%;
@@ -219,6 +228,8 @@ ul{
         transition: 0.2s;
     }
     .close{
+        /* transform: translateX(700px); */
+        /* width: 0%; */
         display: none;
     }
     .closeMenu{
@@ -226,9 +237,11 @@ ul{
         right: 15px;
         top: 15px;
         cursor: pointer;
+        /* display: none; */
     }
     .sideLinks{
         filter:unset;
+        /* display: block; */
         list-style: none;
         font-size: 14px;
         position: absolute;
@@ -316,7 +329,7 @@ ul{
         align-items: center;
     }
     .container .left-side .text h2{
-        width: 90%;
+        width: 100%;
     }
     .container .right-side .image img:first-child {
         width: 100%;
@@ -352,6 +365,7 @@ ul{
         flex-direction: column;
         align-items: center;
         margin: 0 20%;
+        /* padding-bottom: 10px; */
     }
     .container .left-side .text h2{
         color: var(--Almost-Black);
@@ -416,6 +430,6 @@ ul{
     }
     @media (min-width:1440px) {
         .container .left-side .text h2{
-            font-size: 90px;
+            font-size: 71px;
         }
     }
