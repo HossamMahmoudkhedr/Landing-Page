@@ -62,8 +62,7 @@ body{
 .links .companyList{
     position: absolute;
     left: 23.5%;
-    top: 88%;
-    /* z-index: 10; */
+    top: 88%;    
 }
 .links .companyList ul{
     padding: 24px 19px;
@@ -78,7 +77,6 @@ body{
     position: absolute;
     left: 8.5%;
     top: 88%;
-    /* z-index: 10; */
 }
 .links .featuresList ul{
     padding: 24px 19px;
@@ -134,14 +132,10 @@ body{
 /* End of navbar */
 .container{
     margin: 2% 12% 5%;
-    /* margin: 4% 10%; */
-    /* padding: 10px; */
     display: flex;
 }
 .container .left-side .text{
-    /* padding: 16% 0 9% 0; */
     padding: 26% 0 9% 0;
-    /* 11%  0 10% */
 }
 .container .left-side .text h2{
     color: var(--Almost-Black);
@@ -207,9 +201,6 @@ body{
 ul{
     list-style: none;
 }
-/* .sideLinks{
-    display: none;
-} */
 .dark{
     position: absolute;
     width: 100%;
@@ -228,8 +219,6 @@ ul{
         transition: 0.2s;
     }
     .close{
-        /* transform: translateX(700px); */
-        /* width: 0%; */
         display: none;
     }
     .closeMenu{
@@ -237,11 +226,9 @@ ul{
         right: 15px;
         top: 15px;
         cursor: pointer;
-        /* display: none; */
     }
     .sideLinks{
         filter:unset;
-        /* display: block; */
         list-style: none;
         font-size: 14px;
         position: absolute;
@@ -365,7 +352,6 @@ ul{
         flex-direction: column;
         align-items: center;
         margin: 0 20%;
-        /* padding-bottom: 10px; */
     }
     .container .left-side .text h2{
         color: var(--Almost-Black);
